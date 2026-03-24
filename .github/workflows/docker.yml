@@ -8,7 +8,7 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:  
 
     # 1. Checkout code
     - name: Checkout repository
@@ -31,7 +31,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: your-dockerhub-username/your-image-name:latest
+        tags: kartikk7/myapp:latest
     - name: Install dependencies
       run: pip install -r requirements.txt
 
